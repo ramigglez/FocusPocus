@@ -3,7 +3,7 @@
 require_once './Boilerplate.php';
 require_once './BplateFunctions.php';
 
-$genesis = (new Block ([
+$genesis = block([
 
     dt(),
 
@@ -27,6 +27,6 @@ $genesis = (new Block ([
 
     ])
 
-]))->_get();
+]);
 
 focuspocus($genesis);

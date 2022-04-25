@@ -101,3 +101,13 @@ function focuspocus($genesis) {
 
     echo html_entity_decode($html[0]);
 }
+
+/**block
+ * Esta funcion 
+ * nos encapsula el 
+ * codigo html en un 
+ * bloque con su hash
+ */
+function block($data) {
+    return (new Block ($data))->_get();
+}
