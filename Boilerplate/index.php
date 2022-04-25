@@ -1,7 +1,6 @@
 <?php
 
 require_once './Boilerplate.php';
-require_once './BplateFunctions.php';
 
 $genesis = (new Block ([
 
