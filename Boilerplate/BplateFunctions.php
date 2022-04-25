@@ -48,3 +48,29 @@ function body($content) {
 function meta_charset() {
     return (new Bplate('meta',0,['charset'=>'UTF-8']))->get();
 }
+
+function meta_viewport() {
+    return (new Bplate('meta',0,[
+        'name'=>'viewport',
+        'content'=>'width=device-width, initial-scale=1.0'
+    ]))->get();
+}
+
+/**title
+ * El titulo nos
+ * sirve para agregar 
+ * el texto que querramos 
+ * al tab del navegador
+ */
+function title () {
+    return (new Boilerplate('title',0,[],'My Project'))->get();
+}
+
+/**_link 
+ * Con esta etiqueta 
+ * podemos vincular archivos css
+ * en el head del documento
+*/
+function _link() {
+    return (new Bplate('link',0,['rel'=>'stylesheet','href'=>'./Boilerplate.css']))->get();
+}

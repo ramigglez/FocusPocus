@@ -12,12 +12,9 @@ $genesis = (new Block ([
         head([
 
             meta_charset(),
-            (new Bplate('meta',0,[
-                'name'=>'viewport',
-                'content'=>'width=device-width, initial-scale=1.0'
-            ]))->get(),
-            (new Boilerplate('title',0,[],'My Project'))->get(),
-            (new Bplate('link',0,['rel'=>'stylesheet','href'=>'./Boilerplate.css']))->get()
+            meta_viewport(),
+            title(),
+            _link()
 
         ]),
 
