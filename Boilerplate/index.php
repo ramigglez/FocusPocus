@@ -1,10 +1,11 @@
 <?php
 
 require_once './Boilerplate.php';
+require_once './BplateFunctions.php';
 
 $genesis = (new Block ([
 
-    (new Bplate('!DOCTYPE',1,['html']))->get(),
+    /*(new Bplate('!DOCTYPE',1,['html']))->get()*/dt(),
 
     (new Boilerplate('html',0,['lang'=>'en'],[
 
