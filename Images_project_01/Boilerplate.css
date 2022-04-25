@@ -11,3 +11,23 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+#img01 {
+    background-image: url('./images/image01.png');
+}
+
+#img02 {
+    background-image: url('./images/image02.png');
+}
+
+#img03 {
+    background-image: url('./images/image03.png');
+}
+
+#img04 {
+    background-image: url('./images/image01.png');
+}
+
+#img05 {
+    background-image: url('./images/image02.png');
+}

@@ -22,6 +22,7 @@ $genesis = block([
         body([
 
             h1(),
+            images(),
             main_script(),
             fa_script()
 

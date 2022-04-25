@@ -136,3 +136,33 @@ function block($data) {
 function h1() {
     return (new Boilerplate('h1',0,[],'Expandibles Images Project 01/50'))->get();
 }
+
+/**div
+ * Esta etiqueta 
+ * es utilizada para 
+ * agrupar otras,
+ * es una caja generica
+ * sin sentido semantico
+ */
+function images() {
+    return (new Boilerplate('div',0,[
+        'class' => 'container'
+    ],[
+        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img01'],
+            (new Boilerplate('h3',0,[],'Explore The Code'))->get()
+        ))->get(),
+        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img02'],
+            (new Boilerplate('h3',0,[],'Explore The Code'))->get()
+        ))->get(),
+        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img03'],
+            (new Boilerplate('h3',0,[],'Explore The Code'))->get()
+        ))->get(),
+        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img04'],
+            (new Boilerplate('h3',0,[],'Explore The Code'))->get()
+        ))->get(),
+        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img05'],
+            (new Boilerplate('h3',0,[],'Explore The Code'))->get()
+        ))->get()
+    ]
+    ))->get();
+}
