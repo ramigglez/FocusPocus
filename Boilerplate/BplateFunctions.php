@@ -27,3 +27,24 @@ function html($content) {
 function head($content) {
     return (new Boilerplate('head',0,[],$content))->get();
 }
+
+/**body
+ * El cuerpo es la etiqueta
+ * que se encarga de 
+ * agrupar todos los 
+ * elementos html que
+ * conforman a la estructura
+ * de la pagina web
+ */
+function body($content) {
+    return (new Boilerplate('body',0,[],$content))->get();
+}
+
+/**meta 
+ * Esta etiqueta nos sirve
+ * para agregar meta informacion
+ * en el head del documento
+*/
+function meta_charset() {
+    return (new Bplate('meta',0,['charset'=>'UTF-8']))->get();
+}

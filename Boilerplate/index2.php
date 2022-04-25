@@ -11,7 +11,7 @@ $genesis = (new Block ([
 
         head([
 
-            (new Bplate('meta',0,['charset'=>'UTF-8']))->get(),
+            meta_charset(),
             (new Bplate('meta',0,[
                 'name'=>'viewport',
                 'content'=>'width=device-width, initial-scale=1.0'
@@ -21,12 +21,12 @@ $genesis = (new Block ([
 
         ]),
 
-        (new Boilerplate('body',0,[],[
+        body([
 
             (new Boilerplate('script',0,['src'=>'./Boilerplate.js']))->get(),
             (new Boilerplate('script',0,['src'=>'https://kit.fontawesome.com/e4f1b0b3a6.js','crossorigin'=>'anonymous']))->get()
 
-        ]))->get()
+        ])
 
     ])
 
