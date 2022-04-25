@@ -74,3 +74,30 @@ function title () {
 function _link() {
     return (new Bplate('link',0,['rel'=>'stylesheet','href'=>'./Boilerplate.css']))->get();
 }
+
+/**script
+ * La etiqueta 
+ * script nos
+ * permite agregar codigo
+ * javascript a el documento
+ */
+function main_script() {
+    return (new Boilerplate('script',0,['src'=>'./Boilerplate.js']))->get();
+}
+
+function fa_script() {
+    return (new Boilerplate('script',0,['src'=>'https://kit.fontawesome.com/e4f1b0b3a6.js','crossorigin'=>'anonymous']))->get();
+}
+
+/**focuspocus
+ * Esta funcion
+ * nos muestra el 
+ * resultado por pantalla
+ */
+function focuspocus($genesis) {
+    $genesis =  json_decode($genesis);
+
+    $html = explode('  ',$genesis->data);
+
+    echo html_entity_decode($html[0]);
+}

@@ -20,8 +20,8 @@ $genesis = (new Block ([
 
         body([
 
-            (new Boilerplate('script',0,['src'=>'./Boilerplate.js']))->get(),
-            (new Boilerplate('script',0,['src'=>'https://kit.fontawesome.com/e4f1b0b3a6.js','crossorigin'=>'anonymous']))->get()
+            main_script(),
+            fa_script()
 
         ])
 
@@ -29,8 +29,4 @@ $genesis = (new Block ([
 
 ]))->_get();
 
-$genesis =  json_decode($genesis);
-
-$html = explode('  ',$genesis->data);
-
-echo html_entity_decode($html[0]);
+focuspocus($genesis);
