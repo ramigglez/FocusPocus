@@ -32,4 +32,4 @@ $genesis = block([
 
 ]);
 
-focuspocus($genesis);
+focuspocus($genesis,0);

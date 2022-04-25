@@ -81,7 +81,7 @@ function fonts() {
         (new Bplate('link',2,[
                 'kv'=>[
                         'rel'=>'preconnect',
-                        'href'=>'https://fonts.gstatic.com"'
+                        'href'=>'https://fonts.gstatic.com'
                 ],
                 'il' => [
                     'crossorigin'
@@ -155,16 +155,16 @@ function images() {
         (new Boilerplate('div',0,['class'=>'panel active','id'=>'img01'],
             (new Boilerplate('h3',0,[],'Explore The Code'))->get()
         ))->get(),
-        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img02'],
+        (new Boilerplate('div',0,['class'=>'panel','id'=>'img02'],
             (new Boilerplate('h3',0,[],'Explore The Code'))->get()
         ))->get(),
-        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img03'],
+        (new Boilerplate('div',0,['class'=>'panel','id'=>'img03'],
             (new Boilerplate('h3',0,[],'Explore The Code'))->get()
         ))->get(),
-        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img04'],
+        (new Boilerplate('div',0,['class'=>'panel','id'=>'img04'],
             (new Boilerplate('h3',0,[],'Explore The Code'))->get()
         ))->get(),
-        (new Boilerplate('div',0,['class'=>'panel active','id'=>'img05'],
+        (new Boilerplate('div',0,['class'=>'panel','id'=>'img05'],
             (new Boilerplate('h3',0,[],'Explore The Code'))->get()
         ))->get()
     ]
