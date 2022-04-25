@@ -5,11 +5,11 @@ require_once './BplateFunctions.php';
 
 $genesis = (new Block ([
 
-    (new Bplate('!DOCTYPE',1,['html']))->get(),
+    dt(),
 
-    (new Boilerplate('html',0,['lang'=>'en'],[
+    html([
 
-        (new Boilerplate('head',0,[],[
+        head([
 
             (new Bplate('meta',0,['charset'=>'UTF-8']))->get(),
             (new Bplate('meta',0,[
@@ -19,7 +19,7 @@ $genesis = (new Block ([
             (new Boilerplate('title',0,[],'My Project'))->get(),
             (new Bplate('link',0,['rel'=>'stylesheet','href'=>'./Boilerplate.css']))->get()
 
-        ]))->get(),
+        ]),
 
         (new Boilerplate('body',0,[],[
 
@@ -28,7 +28,7 @@ $genesis = (new Block ([
 
         ]))->get()
 
-    ]))->get()
+    ])
 
 ]))->_get();
 
