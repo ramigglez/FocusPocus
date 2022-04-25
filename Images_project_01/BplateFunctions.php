@@ -75,6 +75,22 @@ function _link() {
     return (new Bplate('link',0,['rel'=>'stylesheet','href'=>'./Boilerplate.css']))->get();
 }
 
+function fonts() {
+    return implode('',[
+        (new Bplate('link',0,['rel'=>'preconnect','href'=>'https://fonts.googleapis.com']))->get(),
+        (new Bplate('link',2,[
+                'kv'=>[
+                        'rel'=>'preconnect',
+                        'href'=>'https://fonts.gstatic.com"'
+                ],
+                'il' => [
+                    'crossorigin'
+                ]
+            ]))->get(),
+        (new Bplate('link',0,['rel'=>'stylesheet','href'=>'https://fonts.googleapis.com/css2?family=Tapestry&display=swap']))->get()
+    ]);
+}
+
 /**script
  * La etiqueta 
  * script nos

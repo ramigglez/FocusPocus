@@ -14,7 +14,8 @@ $genesis = block([
             meta_charset(),
             meta_viewport(),
             title(),
-            _link()
+            _link(),
+            fonts()
 
         ]),
 
