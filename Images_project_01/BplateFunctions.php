@@ -110,12 +110,16 @@ function fa_script() {
  * nos muestra el 
  * resultado por pantalla
  */
-function focuspocus($genesis) {
-    $genesis =  json_decode($genesis);
+function focuspocus($genesis,$block = 0) {
+    if($block === 0) {
+        $genesis =  json_decode($genesis);
 
-    $html = explode('  ',$genesis->data);
+        $html = explode('  ',$genesis->data);
 
-    echo html_entity_decode($html[0]);
+        echo html_entity_decode($html[0]);
+    }else{
+        echo $genesis;
+    }
 }
 
 /**block
