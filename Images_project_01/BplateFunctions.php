@@ -63,7 +63,7 @@ function meta_viewport() {
  * al tab del navegador
  */
 function title () {
-    return (new Boilerplate('title',0,[],'My Project'))->get();
+    return (new Boilerplate('title',0,[],'My Project 01'))->get();
 }
 
 /**_link 
@@ -110,4 +110,13 @@ function focuspocus($genesis) {
  */
 function block($data) {
     return (new Block ($data))->_get();
+}
+
+/**h1
+ * Esta etiqueta es 
+ * el encabezado 
+ * mas grande
+ */
+function h1() {
+    return (new Boilerplate('h1',0,[],'Expandibles Images Project 01/50'))->get();
 }
