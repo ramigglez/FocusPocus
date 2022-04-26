@@ -1,0 +1,65 @@
+.project {
+    display: flex;
+    flex-flow: column;
+    border:  1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    height: auto;
+}
+
+.project > p {
+    margin: 0.25em 1rem 1rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.project > h2 {
+    margin: 1rem 1rem 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.project > img {
+    order: -1;
+    align-self: center;
+    width : 100%;
+}
+
+.project > .button {
+    margin-top: auto; 
+    background: rgba(205, 134, 63, 0.692);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-decoration : none;
+    text-align : center;
+    font-family: "Rubik Glitch", cursive;
+    width: 30%;
+    margin-left: auto;
+}
+
+.project > .button:hover {
+    text-decoration : underline;
+}
+
+.project:hover {
+    border-color: rgba(170, 150, 61, 0.863);
+}
+
+@media screen and (max-width:600px) {
+    .project > .button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .project > .button {
+        width: auto;
+    }
+}
+
+header h1 {
+    color: black;
+}

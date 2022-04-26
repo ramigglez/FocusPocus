@@ -1,0 +1,40 @@
+* {
+
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+
+}
+
+@supports (display: grid) {
+
+    .wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+
+}
+
+.wrap {
+    font-family: Avenir, Roboto, Helvetica, san-serif; 
+    font-size: 80%;
+    width : 100%;
+    padding : 20px;
+    height: 100vh;
+}
+
+.wrap {
+
+    background-color: rgba(202, 164, 126, 0.692);
+    transition: 1.5s;
+
+}
+
+.wrap:hover {
+    background: linear-gradient(-45deg, #EE7752,#006341, #FFFFFF, #CE1126);
+}
+
+#refer {
+    background: linear-gradient(-45deg, #EE7752,#006341, #FFFFFF, #CE1126);
+}
